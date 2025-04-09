@@ -6,5 +6,5 @@
 *.txt
 
 # Folders
-data/
+dicoms/
 segmentations/

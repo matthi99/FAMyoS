@@ -8,4 +8,11 @@
 # Folders
 dicoms/
 segmentations/
+
+
+# Ignore all files and folders inside weights
 weights/*
+
+# Except for the placeholder files
+!weights/.gitkeep
+!weights/.gitignore

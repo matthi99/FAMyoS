@@ -8,6 +8,4 @@
 # Folders
 dicoms/
 segmentations/
-weights/2d-net/
-weights/3d-net/
-weights/roi-net/
+weights/*

@@ -1,0 +1,10 @@
+# Datafiles
+*.npy
+*.xlsx
+*.pt
+*.pdf
+*.txt
+
+# Folders
+data/
+segmentations/

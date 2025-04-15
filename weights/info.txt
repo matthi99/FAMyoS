@@ -1,1 +1,1 @@
-Here the weights should be stored
+Here the weights should be stored (3 folders called 2d-net, 3d-net, roi-net)

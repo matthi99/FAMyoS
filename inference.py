@@ -12,13 +12,12 @@ import argparse
 
 
 
-from utils import *
+from utils import get_logger, load_network, get_data, calculate_center, predict, save_dicom, plot
 
 
 parser = argparse.ArgumentParser(description='Define parameters for inference.')
 parser.add_argument('--patient_folder', help= "Path folder where DICOM files of patients are stored", type= str, 
                     default="dicoms/")
-parser.add_argument('--save', help= "Should segmentation masks be saved", type=bool, default=True)
 parser.add_argument('--save_folder',  help= "Path folder where results should be stored", type= str, default="segmentations")
 parser.add_argument('--plots', help= "Plot segmentations", type=bool, default=False)
 args = parser.parse_args()
@@ -52,8 +51,7 @@ for patient in patients:
         X, area_elements, zspacing = get_data(root, filenames) 
         center =calculate_center(X, net_roi, device)
         segmentation=predict(X, center, device)
-        if args.save == True:
-            save_dicom(segmentation, root, filenames, patient, args.save_folder)
+        save_dicom(segmentation, root, filenames, patient, args.save_folder)
         if args.plots == True:
             plot(X, segmentation, patient, plotfolder)
 

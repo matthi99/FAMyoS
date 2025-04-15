@@ -55,29 +55,20 @@ Once downloaded, place the weights into a folder named `weights/` or the directo
 Run the segmentation on your own data:
 
 ```bash
-python run_inference.py --input /path/to/your/images --output /path/to/save/results
+python inference.py --patient_folder /path/to/your/images --save_folder /path/to/save/results --plots True/False 
 ```
+- `--patient_folder` specifies the path to your dicom images (`default="dicoms/"`). Data should be saved as dicom files in folders called Patient_1, Patient_2, and so on.
+- `--save_folder` path were the results should get saved
+- `--plots` If True png file get saved visualizing segmentation results. 
 
-Make sure the model weights are downloaded and the path is correctly set within the code or configuration file.
-
----
 
 ## 📖 Citation
 
 If you use FAMyoS in your research, please cite the corresponding paper:
 
-> _[Add your citation here, e.g., journal article, conference paper, or preprint]_
+> _[Schwab, M., Pamminger, M., Kremser, C., Haltmeier, M., & Mayr, A. (2025). Deep Learning Pipeline for Fully Automated Myocardial Infarct Segmentation from Clinical Cardiac MR Scans. arXiv preprint arXiv:2502.03272.]_
 
 ---
+Matthias Schwab<sup>1
 
-## 📄 License
-
-This project is licensed under the MIT License.  
-See the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙌 Acknowledgements
-
-FAMyoS was developed as part of ongoing research in cardiac image analysis and deep learning.  
-Special thanks to all contributors and collaborators!
+<sup>1</sup> University Hospital for Radiology, Medical University Innsbruck, Anichstraße 35, 6020 Innsbruck, Austria

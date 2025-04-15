@@ -58,8 +58,8 @@ Run the segmentation on your own data:
 python inference.py --patient_folder /path/to/your/images --save_folder /path/to/save/results --plots True/False 
 ```
 - `--patient_folder` specifies the path to your dicom images (`default="dicoms/"`). Data should be saved as dicom files in folders called Patient_1, Patient_2, and so on.
-- `--save_folder` path were the results should get saved
-- `--plots` If True png file get saved visualizing segmentation results. 
+- `--save_folder` path were the results should get saved (`default="segmentations/"`).
+- `--plots` If True png file get saved visualizing segmentation results (`default=False`). 
 
 
 ## 📖 Citation

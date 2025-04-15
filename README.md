@@ -26,8 +26,8 @@ FAMyoS is a deep learning-based pipeline designed to automatically segment myoca
 2. **Create and activate a virtual environment (recommended):**
 
    ```bash
-   python -m venv venv
-   source venv/bin/activate   # On Windows: venv\Scripts\activate
+   conda create -n FAMyoS python=3.9 #python version < 3.8
+   conda activate FAMyoSconda  
    ```
 
 3. **Install the required dependencies:**

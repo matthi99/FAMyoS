@@ -19,18 +19,19 @@ FAMyoS is a deep learning-based pipeline designed to automatically segment myoca
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/FAMyoS.git
+   git clone https://github.com/matthi99/FAMyoS.git
    cd FAMyoS
    ```
 
 2. **Create and activate a virtual environment (recommended):**
 
    ```bash
-   conda create -n FAMyoS python=3.9 #python version < 3.8
+   conda create -n FAMyoS python=3.9 #python version <= 3.9
    conda activate FAMyoSconda  
    ```
 
 3. **Install the required dependencies:**
+   Install [Pytorch](https://pytorch.org/get-started/locally/) (<= 2.6.0) and other packages. 
 
    ```bash
    pip install -r requirements.txt

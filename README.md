@@ -62,14 +62,6 @@ python inference.py --patient_folder /path/to/your/images --save_folder /path/to
 - `--plots` If True png file get saved visualizing segmentation results (`default=False`). 
 
 
-## 📖 Citation
-
-If you use FAMyoS in your research, please cite the corresponding paper:
-
-> _Schwab, M., Pamminger, M., Kremser, C., Haltmeier, M., & Mayr, A. (2025). Deep Learning Pipeline for Fully Automated Myocardial Infarct Segmentation from Clinical Cardiac MR Scans. arXiv preprint arXiv:2502.03272._
-
----
-
 Matthias Schwab
 
 <sup>1</sup> University Hospital for Radiology, Medical University Innsbruck, Anichstraße 35, 6020 Innsbruck, Austria

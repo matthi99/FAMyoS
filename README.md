@@ -14,6 +14,16 @@ FAMyoS is a deep learning-based pipeline designed to automatically segment myoca
 
 ---
 
+## 📖 Citation
+
+If you use this pipeline or the pretrained weights in your research, please cite:
+
+Schwab M, Pamminger M, Kremser C, Haltmeier M, Mayr A. Deep learning pipeline for fully automated myocardial infarct segmentation from clinical cardiac MR scans. Radiology Advances. 2025;2(4):umaf023. https://doi.org/10.1093/radadv/umaf023
+
+Schwab M, Pamminger M, Kremser C, Almar-Munoz E, Reinstadler SJ, Reindl M, Metzler B, Haltmeier M, Mayr A. Association of Deep Learning–based Myocardial Infarction Size Quantification in Cardiac MRI with Cardiac Biomarker Levels. Radiology: Cardiothoracic Imaging. 2026;8(3). https://doi.org/10.1148/ryct.250235
+
+---
+
 ## 🛠 Installation
 
 1. **Clone the repository:**
@@ -61,7 +71,28 @@ python inference.py --patient_folder /path/to/your/images --save_folder /path/to
 - `--save_folder` path were the results should get saved (`default="segmentations/"`).
 - `--plots` If True png file get saved visualizing segmentation results (`default=False`). 
 
+## ⚠️ Disclaimer
+
+This software is intended for research purposes only and has not been approved for clinical or diagnostic use.
+
+## License
+
+### Source code
+The source code in this repository is licensed under the
+Apache-2.0 license. See LICENSE for details.
+
+### Pretrained weights
+The pretrained model weights are released under Apache-2.0 license.
+
+### Training data
+The training data are not included in this repository and are
+not redistributed by the authors. 
+
+### Third-party software
+This repository depends on third-party packages listed in `requirements.txt`.
+
+---
 
 Matthias Schwab
 
-<sup>1</sup> University Hospital for Radiology, Medical University Innsbruck, Anichstraße 35, 6020 Innsbruck, Austria
+University Hospital for Radiology, Medical University Innsbruck, Anichstraße 35, 6020 Innsbruck, Austria
